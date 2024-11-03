@@ -6,11 +6,11 @@ var settings = {
         effect: -0.75,
         size: 30,
     },
-    flowers: 50, // Number of flowers
+    flowers: 5, // Number of flowers
     trail: {
         length: 100, // Number of trail particles
         duration: 1, // Duration for trail particles
-        velocity: 30 // Speed of trail particles
+        velocity: 50 // Speed of trail particles
     }
 };
 
@@ -180,7 +180,7 @@ var ParticlePool = (function() {
             flowerContext.lineTo(point.x, point.y);
         }
         flowerContext.closePath();
-        flowerContext.fillStyle = '#afc0a3';
+        flowerContext.fillStyle = '#d8ead3';
         flowerContext.fill();
 
         var image = new Image();
